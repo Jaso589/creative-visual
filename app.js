@@ -2,7 +2,8 @@
 const express = require ('express');
 const app =  express();
 
-const port = 4000;
+
+const port = process.env.PORT || 4000;
 
 const app = initializeApp({
     apiKey: "AIzaSyDsScP4RmpYG5U15se1_MZf1fhYqB7AmIs",
