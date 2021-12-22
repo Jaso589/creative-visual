@@ -4,16 +4,6 @@ const app =  express();
 
 
 const port = process.env.PORT || 4000;
-
-const app = initializeApp({
-    apiKey: "AIzaSyDsScP4RmpYG5U15se1_MZf1fhYqB7AmIs",
-    authDomain: "creative-visual.firebaseapp.com",
-    projectId: "creative-visual",
-    storageBucket: "creative-visual.appspot.com",
-    messagingSenderId: "997720311937",
-    appId: "1:997720311937:web:adab10cad8cbc9c5f1a580",
-    measurementId: "G-K1ENCC8BCT"
-  });
 //
 app.set('view engine', 'ejs');
 app.set("views",__dirname +"/views")
