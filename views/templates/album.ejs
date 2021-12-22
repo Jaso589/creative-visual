@@ -1,0 +1,59 @@
+<main>
+
+    <section class="py-5 text-center container">
+    <div class="row py-lg-5 ">
+        <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album</h1>
+        <p class="lead text-muted">Revise nuestra galeria y algunos trabajos que venimos realizando.</p>
+        <p>
+            <!--<a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
+        </p>
+        </div>
+    </div>
+    </section>
+</main>
+<div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="galeria">
+            <!--<div class="col">
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#examModal">
+                        <img src="img/img-1.jpg" class="card-img-top" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="examModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <img src="img/img-1.jpg" class="img-fluid rounded" alt="">
+                </div>
+            </div>-->
+
+        </div>
+</div>
+<script>
+   var imagenes = [1,2,3,4,5,6,7,8,9];
+   var galeria = document.getElementById('galeria');
+   for(imagen of imagenes){
+       galeria.innerHTML +=` 
+            <div class="col">
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#id${imagen}">
+                        <img src="img/album/${imagen}.jpg" class="card-img-top" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            <!--modal-->
+            <div class="modal fade" id="id${imagen}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+                    <img src="img/album/${imagen}.jpg" class="img-fluid rounded " alt="">
+                </div>
+            </div>
+       `
+   }
+   </script>
